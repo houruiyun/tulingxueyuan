@@ -1,3 +1,9 @@
+import os, django
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tulingxueyuan.settings")
+
+django.setup()
+
 from django.conf.urls import include, url
 from django.contrib import admin
 from teacher import views as tv
